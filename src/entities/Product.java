@@ -8,26 +8,22 @@ estoque)
  */
 package entities;
 
-/**
- *
- * @author Jean
- */
 public class Product {
-    
+
     public String nome;
     public double preco;
     public int quantidade;
-    
-    public double valorEstoque(){
+
+    public double valorEstoque() {
         return preco * quantidade;
-        
+
     }
-    
-    public void adicionaProduto(int qtd){
-        quantidade +=qtd;
+
+    public void adicionaProduto(int qtd) {
+        quantidade += qtd;
     }
-    
-    public void retiraProduto(int qtd){
+
+    public void retiraProduto(int qtd) {
         quantidade -= qtd;
     }
 
@@ -35,7 +31,5 @@ public class Product {
     public String toString() {
         return "Product Data:" + nome + "," + preco + "," + quantidade + ", " + valorEstoque();
     }
-    
-    
-    
+
 }
